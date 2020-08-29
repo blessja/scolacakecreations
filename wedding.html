@@ -1,21 +1,20 @@
-<! DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="utf-8">
-	<title>Scola Cake Creations</title>
-	<link rel="stylesheet" href="assets/stylesheet/main.css">
-	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../dist/css/lightbox.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
 </head>
-	
 <body>
-	<!-- Header -->
-	<header class="primary-header container group">
-		<h1 class="logo">
+
+<header class="main-header">
+	<h1 class="logo">
 		<a href="index.html">Scola<br> Cake Creations</a>
 		</h1>
 		<h3 class="tagline">Creating Moments</h3>
 		
-		<nav class="nav primary-nav">
+		<nav class=" nav primary-nav">
 			<ul>
 				<li><a href="index.html">Home</a></li><!--
 				--><li><a href="wedding.html">Wedding</a></li><!--
@@ -24,23 +23,65 @@
 				--><li><a href="book.html">Book</a><li>
 			</ul>
 		</nav>
-		
-		
-		
-	</header>
-	
-	<!-- Hero -->
-	<section class="row-alt">
-	<div class="lead hero container">
-		<h1>Wedding</h1>
-		<p>We would like you to feel and remember you wedding day as one of the best with best and top quality cake.</p>
-	</div>
-	</section>
-		
-	<!-- Footer -->
+</header>
+
+<!-- Header -->
+<section class="primary-header container group">
+<div class="header" id="myHeader">
+  <h1> Scola Cakes Image Grid</h1>
+  <p>Click on the buttons to change the grid view.</p>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">4</button>
+</div>
+</section>
+
+<!-- Photo Grid -->
+<section class="row">
+<div class="grid"> 
+  <div class="column">
+    <a class="example-image-link" href="images/wedding/wedding 1.jpg" data-lightbox="wedding 1"><img src="images/wedding/wedding 1.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 2.jpg" data-lightbox="wedding 2"><img src="images/wedding/wedding 2.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 3.jpg" data-lightbox="wedding 3"><img src="images/wedding/wedding 3.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 4.jpg" data-lightbox="wedding 4"><img src="images/wedding/wedding 4.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 5.jpg" data-lightbox="wedding 5"><img src="images/wedding/wedding 5.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 6.jpg" data-lightbox="wedding 6"><img src="images/wedding/wedding 6.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 7.jpg" data-lightbox="wedding 7"><img src="images/wedding/wedding 7.jpg" style="width:50%">
+  </div><!--
+  --><div class="column">
+    <img src="images/wedding/wedding 8.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 1.jpg" data-lightbox="wedding 1"><img src="images/wedding/wedding 1.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 3.jpg" data-lightbox="wedding 3"><img src="images/wedding/wedding 3.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 9.jpg" data-lightbox="wedding 9"><img src="images/wedding/wedding 9.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 10.jpg" data-lightbox="wedding 10"><img src="images/wedding/wedding 10.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 4.jpg" data-lightbox="wedding 4"><img src="images/wedding/wedding 4.jpg" style="width:50%">
+	<a class="example-image-link" href="images/wedding/wedding 5.jpg" data-lightbox="wedding 5"><img src="images/wedding/wedding 5.jpg" style="width:50%">
+	<a class="example-image-link" href="images/wedding/wedding 2.jpg" data-lightbox="wedding 2"><img src="images/wedding/wedding 2.jpg" style="width:50%">
+  </div><!-- 
+  --><div class="column">
+    <a class="example-image-link" href="images/wedding/wedding 10.jpg" data-lightbox="wedding 10"><img src="images/wedding/wedding 10.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 7.jpg" data-lightbox="wedding 7"><img src="images/wedding/wedding 7.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 2.jpg" data-lightbox="wedding 2"><img src="images/wedding/wedding 2.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 6.jpg" data-lightbox="wedding 6"><img src="images/wedding/wedding 6.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 3.jpg" data-lightbox="wedding 3"><img src="images/wedding/wedding 3.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 1.jpg" data-lightbox="wedding 1"><img src="images/wedding/wedding 1.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 8.jpg" data-lightbox="wedding 8"><img src="images/wedding/wedding 8.jpg" style="width:50%">
+  </div><!--
+  --><div class="column">
+    <a class="example-image-link" href="images/wedding/wedding 1.jpg" data-lightbox="wedding 1"><img src="images/wedding/wedding 1.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 2.jpg" data-lightbox="wedding 2"><img src="images/wedding/wedding 2.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 4.jpg" data-lightbox="wedding 4"><img src="images/wedding/wedding 4.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 5.jpg" data-lightbox="wedding 5"><img src="images/wedding/wedding 5.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 7.jpg" data-lightbox="wedding 7"><img src="images/wedding/wedding 7.jpg" style="width:50%">
+    <a class="example-image-link" href="images/wedding/wedding 8.jpg" data-lightbox="wedding 8"><img src="images/wedding/wedding 8.jpg" style="width:50%">
+	<a class="example-image-link" href="images/wedding/wedding 10.jpg" data-lightbox="wedding 10"><img src="images/wedding/wedding 10.jpg" style="width:50%">
+  </div>
+</div>
+</section>
+<!-- Footer -->
 	<footer class="primary-footer container group">
 	
-	<small>&copy;Scola Cake Creations</small>
+		<small>&copy;Scola Cake Creations</small>
 	
 		<nav class="nav">
 			<ul>
@@ -51,12 +92,51 @@
 				--><li><a href="book.html">Book</a><li>
 			</ul>
 		</nav>
-		
+
 	</footer>
-	</section>
 
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
 
+// Declare a loop variable
+var i;
 
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
 
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<script src="../dist/js/lightbox-plus-jquery.min.js"> lightbox.option({'resizeDuration': 200,'wrapArond': true })</script>
 </body>
 </html>

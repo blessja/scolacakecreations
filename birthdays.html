@@ -1,0 +1,153 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Scola Cake Creations</title>
+	<link rel="stylesheet" href="assets/stylesheet/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+	
+<body>
+	<!-- Header -->
+	<header class="primary-header container group">
+		<h1 class="logo">
+		<a href="index.html">Scola<br> Cake Creations</a>
+		</h1>
+		<h3 class="tagline">Creating Moments</h3>
+		
+		<nav class="nav primary-nav">
+			<ul>
+				<li><a href="index.html">Home</a></li><!--
+				--><li><a href="wedding.html">Wedding</a></li><!--
+				--><li><a href="birthdays.html">Birthdays</a></li><!--
+				--><li><a href="anniversary.html">Annivesary</a><li><!--
+				--><li><a href="book.html">Book</a><li>
+			</ul>
+		</nav>
+		
+		
+		
+	</header>
+	
+	<!-- Hero -->
+	<section class="row-alt">
+	<div class="lead hero container">
+		<h1>Birthdays</h1>
+		<p>Making the fun and the creativityof the cake is our number one priority and we love playing with whatever you want us to do.</p>
+	</div>
+	</section>
+	
+	<section class="tab-container">
+		<div class="mySlides">
+			<div class="numbertext">1 / 6</div>
+			<img src="assets/images/birthday/birthday 1.jpg" style="width:25%" class="center">
+		</div>
+		
+		<div class="mySlides">
+			<div class="numbertext">2 / 6</div>
+			<img src="assets/images/birthday/birthday 2.jpg" style="width:25%" class="center">
+		</div>
+		
+		<div class="mySlides">
+			<div class="numbertext">3 / 6</div>
+			<img src="assets/images/birthday/birthday 3.jpg" style="width:25%" class="center">
+		</div>
+		
+		<div class="mySlides">
+			<div class="numbertext">4 / 6</div>
+			<img src="assets/images/birthday/birthday 4.jpg" style="width:25%" class="center">
+		</div>
+		
+		<div class="mySlides">
+			<div class="numbertext">5 / 6</div>
+			<img src="assets/images/birthday/birthday 5.jpg" style="width:25%" class="center">
+		</div>
+		
+		<div class="mySlides">
+			<div class="numbertext">6 / 6</div>
+			<img src="assets/images/birthday/birthday 6.jpg" style="width:25%" class="center">
+		</div>
+		
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+
+		<div class="caption-container">
+		<p id="caption"></p>
+		</div>
+	
+		<section class="primary-row">
+			<div class="column">
+			<img class="demo cursor" src="assets/images/birthday/birthday 1.jpg" style="width:50%" onclick="currentSlide(1)" alt="Choccolate Cake">
+			</div>
+			
+			<div class="column">
+			<img class="demo cursor" src="assets/images/birthday/birthday 2.jpg" style="width:50%" onclick="currentSlide(2)" alt="Vanilla Cake">
+			</div>
+			
+			<div class="column">
+			<img class="demo cursor" src="assets/images/birthday/birthday 3.jpg" style="width:50%" onclick="currentSlide(3)" alt="Vanilla Cake">
+			</div>
+			
+			<div class="column">
+			<img class="demo cursor" src="assets/images/birthday/birthday 4.jpg" style="width:50%" onclick="currentSlide(4)" alt="Vanilla Cake">
+			</div>
+			
+			<div class="column">
+			<img class="demo cursor" src="assets/images/birthday/birthday 5.jpg" style="width:50%" onclick="currentSlide(5)" alt="Vanilla Cake">
+			</div>
+			
+			<div class="column">
+			<img class="demo cursor" src="assets/images/birthday/birthday 6.jpg" style="width:50%" onclick="currentSlide(6)" alt="Vanilla Cake">
+			</div>
+			
+		</section>
+	</section>
+	<script>
+				var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  var captionText = document.getElementById("caption");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		  captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+	</script>
+	<!-- Footer -->
+	<footer class="primary-footer container group">
+	
+	<small>&copy;Scola Cake Creations</small>
+	
+		<nav class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li><!--
+				--><li><a href="wedding.html">Wedding</a></li><!--
+				--><li><a href="birthdays.html">Birthdays</a></li><!--
+				--><li><a href="anniversary.html">Annivesary</a><li><!--
+				--><li><a href="book.html">Book</a><li>
+			</ul>
+		</nav>
+		
+	</footer>
+	</section>
+</body>
+</html>
